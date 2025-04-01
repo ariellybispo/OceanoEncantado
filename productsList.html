@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="assets\css\global.css">
+    <link rel="stylesheet" href="./assets/css/productList.css">
+    <title>Cadastro de categorias</title>
+    <link rel="icon" type="image/png" href="./assets/img/logo.png" />
+</head>
+
+<body>
+    <div class="container-principal">
+        <div class="sidebar">
+            <div id="logo">
+                <img src="assets\img\logo.png" alt="some text" width=60 height=60>
+                <h2>Maré Brincadeiras</h2>
+            </div>
+            <ul>
+                <li><a href="landingADM.html">Página inicial</a></li>
+                <li><a href="#">Estatísticas</a></li>
+            </ul>
+            <div class="adm">Administrar</div>
+            <ul>
+                <li><a href="#">Vendas</a></li>
+                <li class="submenu_Products">
+                    <a href="#">Produtos</a>
+                    <ul>
+                        <li><a href="productsList.html">Lista de produtos</a></li>
+                        <li><a href="categoryManagement.html">Categorias</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Avaliações</a></li>
+                <li><a href="#">Colaboradores</a></li>
+            </ul>
+        </div>
+        <div class="products-area">
+            <div class="icons">
+                <img src="./assets/img/notify.png" alt="">
+                <img src="./assets/img/perfil.png" alt="">
+            </div>
+            <div>
+                <div class="title-button">
+                    <h1>Produtos Cadastrados</h1>
+                    <button onclick="window.location.href='registerProducts.html'" class="new-product">Novo Produto</button>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="card-elements">
+                        <img src="./assets/img/fceb8ab1-7e1a-416a-8b77-f34987ce397d.png">
+                        <h1>Estrutura de escada para crianças</h1>
+                        <p>CÓD 001</p>
+                        <div class="edit-delete-cards">
+                            <img onclick="window.location.href='productEdit.html'" src="./assets/img/edit.png" alt="">
+                            <img src="./assets/img/delete.png" alt="">
+                        </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="assets\js\categoryManagement.js"></script>
+</body>
+
+</html>

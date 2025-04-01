@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/loginUser.css">
+        
+
+    <title>Login</title>
+    <link rel="icon" type="image/png" href="./assets/img/logo.png" />
+</head>
+<body>
+    <main class="container">
+        <form>
+            <h1>Acesse sua conta</h1>
+
+            <div class="input-box">
+                <label for="txtEmail">E-mail</label>
+                <input type="email" name="txtEmail" id="txtEmail" required>
+            </div>
+
+            <div class="input-box">
+                <label for="txtPassword">Senha</label>
+                <input type="password" name="txtPassword" id="txtPassword" required>
+            </div>
+            
+            <div class="forgot">
+                <p id="mensageError"></p>
+                <p><a href="#">Esqueceu a senha?</a></p>   
+            </div>
+                    
+            
+            <button onclick="login()" class="enter" type="button">Login</button>
+            
+            <div class="register-link">
+                <p>Não tem uma conta?<a href="user_SignUp.html">Clique aqui.</a> </p>
+            </div>     
+            <div class="adm-login">
+                <p><a href="loginAdm.html">Login administrador</a></p>
+            </div>   
+        </form>
+    </main>
+    <script src="./assets/js/loginUser.js"></script>
+</body>
+</html>

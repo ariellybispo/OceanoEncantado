@@ -1,0 +1,125 @@
+body{
+    background-color:whitesmoke;
+}
+
+header{
+    padding: 10px;
+    background-color: #FFBE0B;
+}
+
+nav{
+    padding: 10px 20px;
+    flex-direction: row;
+    display: flex;
+    background-color: #FFBE0B;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+nav h2{
+    color: #1490FC;
+    margin-left: 10px;
+}
+
+#information{
+    height: 80vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.information-container h2{
+    align-items: center;
+    justify-content: center;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.informationCard, .information-BillingAddress{
+    margin-bottom: 20px;
+    height: 180px;
+    width: 600px;
+    padding: 20px 0;
+    text-align: start;
+}
+
+.informationCard-container, .billingAddress-container{
+    display: flex;
+    border: solid 2px black;
+    border-radius: 10px;
+    height: 120px;
+    width: 450px;
+    padding: 10px 5px;
+    flex-direction: column;
+}
+
+.form-row input{
+    width: 90px;
+}
+
+.informationCard-container input{
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 2px;
+    height: 25px;
+}
+
+.informationCard-container #inpNumCard, #inpExpirationDate, #inpNameCard{
+    width: 300px;
+}
+
+.informationCard-container #inpCVV{
+    width: 70px;
+}
+
+
+.billingAddress-container input{
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 2px;
+    height: 25px;
+}
+
+.billingAddress-container #inpAddressNumber{
+    width: 80px;
+}
+
+.billingAddress-container #inpAddress, #inpComplement {
+    width: 300px;
+}
+
+.botoes{
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.botoes button{
+    width: 100px;
+    height: 30px;
+    border: solid 1px black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botoes button:active{
+    transform: scale(0.9);
+}
+
+.botoes button:hover{
+    color: #1490FC;
+}
+
+.botoes #btnCancelar{
+    background-color: rgba(128, 128, 128, 0.397);
+    font-weight: 700;
+}
+
+.botoes #btnEnviar{
+    background-color: #FFBE0B;
+    font-weight: 700;
+}

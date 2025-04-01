@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar cartão</title>
+    <link rel="icon" type="image/png" href="./assets/img/logo.png" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/registerCard.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href=""><img src="./assets/img/seta-esquerda.png" alt="Seta para retornar para a página anterior"></a>
+            <h2>Cadastrar cartão</h2>
+        </nav>
+    </header>
+
+    <main id="information">
+        <div class="information-container">
+            <div class="informationCard">
+                <h2>Informações do cartão</h2>
+                <form class="informationCard-container">
+
+                    <div class="form-row">
+                    <input type="text" name="numCard" id="inpNumCard" placeholder="Número do cartão" required>
+                    <input type="text" maxlength="3" name="cvv" id="inpCVV" placeholder="cvv" required>
+                    </div>
+
+                    <input type="text" name="expirationDate" id="inpExpirationDate" placeholder="Data de validade (MM/AA)" required>
+                    <input type="text" name="nameCard" id="inpNameCard" placeholder="Nome no cartão" required>
+                </form>
+            </div>
+
+            <div class="information-BillingAddress">
+                <h2>Endereço de cobrança</h2>
+                <form class="billingAddress-container">
+
+                    <div class="form-row">
+                        <input type="text" name="cep" id="inpCep" placeholder="CEP" maxlength="8" required>
+                        <input type="text" name="state" id="inpState" placeholder="Estado" required>
+                        <input type="text" name="city" id="inpCity" placeholder="Cidade" required>
+                    </div>
+
+                    <div class="form-row">
+                        <input type="text" name="address" id="inpAddress" placeholder="Rua/Avenida" required> 
+                        <input type="number" name="addressNumber" id="inpAddressNumber" placeholder="Número" required>
+                    </div>
+
+                    <input type="text" name="complement" id="inpComplement" placeholder="Complemento">
+                </form>
+
+                <div class="botoes">
+                    <button type="button" id="btnCancelar">Cancelar</button>
+                    <button type="submit" id="btnEnviar">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

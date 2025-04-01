@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estrutura de escalada para crianças</title>
+    <link rel="icon" type="image/png" href="./assets/img/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./assets/css/productsDetail.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <img src="./assets/img/logo.png" alt="Logo" />
+        </div>
+        <div class="menu">
+          <nav>
+            <ul>
+              <li><a href="index.html">Início</a></li>
+              <li><a href="productPage.html">Produtos</a></li>
+              <li><a href="#">Contato</a></li>
+              <li><a href="#">Quem Somos</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="user-actions">
+          <a href="loginUser.html" class="login-btn">
+            <i class="fas fa-user"></i>
+            <span>faça o login ou cadastre-se</span>
+          </a>
+          <a href="#" class="favorites">
+            <i class="fas fa-heart"></i>
+          </a>
+          <a href="#" class="cart">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">1</span>
+          </a>
+        </div>
+        <div class="mobile-menu-icon" onclick="menuShow()">
+          <i class="fas fa-bars icon"></i>
+        </div>
+        <div class="mobile-menu">
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="productPage.html">Produtos</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Quem Somos</a></li>
+          </ul>
+          <div class="mobile-user-actions">
+            <a href="#" class="login-btn">
+              <i class="fas fa-user"></i>
+              <span>faça o login ou cadastre-se</span>
+            </a>
+            <a href="#" class="favorites">
+              <i class="fas fa-heart"></i>
+              <span>favoritos</span>
+            </a>
+            <a href="#" class="cart">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart-count">1</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <!-- Product Details Section -->
+      <div class="product-container">
+        <!-- Product Image -->
+        <div class="product-image">
+          <img
+            src="./assets/img/fceb8ab1-7e1a-416a-8b77-f34987ce397d.png"
+            alt="Estrutura de escalada para crianças"
+          />
+        </div>
+
+        <!-- Product Info -->
+        <div class="product-info">
+          <h1 class="product-title">Estrutura de escalada para crianças</h1>
+
+          <div class="price-container product-price-main">
+            <p class="price">R$120,00</p>
+            <p class="old-price">R$160,00</p>
+          </div>
+
+          <div class="product-description">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Pellentesque dignissim a ipsum sed laculis. Nullam vitae nulla
+              libero. In scelerisque tempus ultricies. Vestibulum vel toreet
+              nisi.
+            </p>
+            <p>
+              Cras tempor nulla vitae risus porta, non vulputate est efficitur.
+              Nullam nec consequat augue, sit amet venenatis metus.
+            </p>
+          </div>
+
+          <!-- Share buttons -->
+          <div class="share-section">
+            <p>Share this:</p>
+            <div class="share-buttons">
+              <a href="#" class="share-btn"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="share-btn"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="share-btn"
+                ><i class="fab fa-pinterest-p"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Quantity and Add to Cart -->
+          <div class="purchase-actions">
+            <div class="quantity-selector">
+              <button class="quantity-btn minus-btn">
+                <i class="fas fa-minus"></i>
+              </button>
+              <input type="text" value="1" class="quantity-input" readonly />
+              <button class="quantity-btn plus-btn">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+
+            <button class="buy-now-btn">Comprar agora</button>
+
+            <button class="favorite-btn">
+              <i class="far fa-heart"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Tabs -->
+      <div class="product-tabs">
+        <div class="tabs-header">
+          <button class="tab-btn active" data-tab="description">
+            Descrição
+          </button>
+          <button class="tab-btn" data-tab="feedback">
+            Feedback <span>(5)</span>
+          </button>
+        </div>
+
+        <div class="tab-content">
+          <!-- Description Tab -->
+          <div class="tab-pane active" id="description">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex ea commodo consequat.
+            </p>
+            <p>
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              anim id est laborum.
+            </p>
+          </div>
+
+          <!-- Feedback Tab -->
+          <div class="tab-pane" id="feedback">
+            <div class="feedback-list">
+              <!-- Feedback will be loaded here -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Related Products -->
+      <div class="related-products">
+        <h2>Outros Produtos</h2>
+
+        <div class="products">
+          <!-- Product 1 -->
+          <div class="product">
+            <span class="discount">-40%</span>
+            <div class="icons">
+              <a href="#">
+                <i class="fas fa-heart"></i>
+              </a>
+              <a href="productDetail.html">
+                <i class="fas fa-eye view-product"></i>
+              </a>
+            </div>
+            <img
+              src="./assets/img/fceb8ab1-7e1a-416a-8b77-f34987ce397d.png"
+              alt="Estrutura de escalada para crianças"
+            />
+            <button class="button">Adicionar</button>
+            <h3>Estrutura de escalada para crianças</h3>
+            <div class="price-container">
+              <p class="price">R$120,00</p>
+              <p class="old-price">R$160,00</p>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="product">
+            <span class="discount">-40%</span>
+            <div class="icons">
+              <a href="#">
+                <i class="fas fa-heart"></i>
+              </a>
+              <a href="productDetail.html">
+                <i class="fas fa-eye view-product"></i>
+              </a>
+            </div>
+            <img
+              src="./assets/img/fceb8ab1-7e1a-416a-8b77-f34987ce397d.png"
+              alt="Estrutura de escalada para crianças"
+            />
+            <button class="button">Adicionar</button>
+            <h3>Estrutura de escalada para crianças</h3>
+            <div class="price-container">
+              <p class="price">R$120,00</p>
+              <p class="old-price">R$160,00</p>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="product">
+            <span class="discount">-40%</span>
+            <div class="icons">
+              <a href="#">
+                <i class="fas fa-heart"></i>
+              </a>
+              <a href="productDetail.html">
+                <i class="fas fa-eye view-product"></i>
+              </a>
+            </div>
+            <img
+              src="./assets/img/fceb8ab1-7e1a-416a-8b77-f34987ce397d.png"
+              alt="Estrutura de escalada para crianças"
+            />
+            <button class="button">Adicionar</button>
+            <h3>Estrutura de escalada para crianças</h3>
+            <div class="price-container">
+              <p class="price">R$120,00</p>
+              <p class="old-price">R$160,00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-image">
+          <img src="./assets/img/logo.png" alt="Logo" />
+        </div>
+        <div class="footer-section">
+          <div class="footer-top">
+            <div class="footer-top-left">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <span> Rua Nome Exemplo, 123 - Bairro </span>
+                <span>00000-000</span>
+              </div>
+            </div>
+            <div class="footer-top-right">
+              <a href="productPage.html">Produtos</a>
+              <a href="#">Quem Somos</a>
+              <a href="#">Perguntas Frequentes</a>
+              <a href="#">Entre em Contato</a>
+            </div>
+          </div>
+
+          <!-- Line -->
+          <div class="line"></div>
+
+          <div class="footer-bottom">
+            <div class="footer-bottom-left">
+              <p>
+                Copyright &copy; 2025 Oceano Encantado - Direitos Reservados
+              </p>
+            </div>
+            <div class="footer-bottom-right">
+              <a href="#">Política de Privacidade</a>
+              <a href="#">Termos de Uso</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <script src="./assets/js/header.js"></script>
+    <script src="./assets/js/productDetail.js"></script>
+    <script src="./assets/js/quantityProducts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="assets\css\personalInformation.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"/>
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./assets/css/productsDetail.css" />
+    <title>Dados Pessoais</title>
+    <link rel="icon" type="image/png" href="./assets/img/logo.png" />
+</head>
+<body class="body_personal">
+    <header>
+        <div class="header-container">
+          <div class="logo">
+            <img src="./assets/img/logo.png" alt="Logo" />
+          </div>
+          <div class="menu">
+            <nav>
+              <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="productPage.html">Produtos</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Quem Somos</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="user-actions">
+            <a href="loginUser.html" class="login-btn">
+              <i class="fas fa-user"></i>
+              <span>faça o login ou cadastre-se</span>
+            </a>
+            <a href="#" class="favorites">
+              <i class="fas fa-heart"></i>
+            </a>
+            <a href="#" class="cart">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart-count">0</span>
+            </a>
+          </div>
+          <div class="mobile-menu-icon" onclick="menuShow()">
+            <i class="fas fa-bars icon"></i>
+          </div>
+          <div class="mobile-menu">
+            <ul>
+              <li><a href="index.html">Início</a></li>
+              <li><a href="productPage.html">Produtos</a></li>
+              <li><a href="#">Contato</a></li>
+              <li><a href="#">Quem Somos</a></li>
+            </ul>
+            <div class="mobile-user-actions">
+              <a href="#" class="login-btn">
+                <i class="fas fa-user"></i>
+                <span>faça o login ou cadastre-se</span>
+              </a>
+              <a href="#" class="favorites">
+                <i class="fas fa-heart"></i>
+                <span>favoritos</span>
+              </a>
+              <a href="#" class="cart">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container_personal">
+        <h2 class="title_personal">Olá, Fulano!</h2>
+        <div class="sidebar_personal">
+                <ul>
+                    <li class="menu-Item active" data-section="dados-pessoais">Dados Pessoais</li>
+                    <li class="menu-Item" data-section="cartoes">Cartões</li>
+                    <li class="menu-Item" data-section="enderecos">Endereços</li>
+                    <li class="menu-Item" data-section="Meus pedidos">Meus pedidos</li>
+                </ul>
+        </div>
+        <div class="content_personal">
+            <div id="dados-pessoais" class="active">
+                <h3>Dados Pessoais</h3>
+            <div class="info">
+                <p><strong>Nome Completo</strong> Fulano Santos</p>
+                    <p><strong>CPF</strong> 123.456.789-10</p>
+                    <p><strong>E-mail</strong> fulano@123</p>
+                    <p><strong>RG</strong> 12.345.678-90</p>
+                    <p><strong>Telefone</strong> 1234-5678</p>
+                    <p><strong>Data de Nascimento</strong> 01/02/2001</p>
+            </div>
+        </div>
+        <div class="edit-icon">
+            <i class="fa-regular fa-pen-to-square"></i>
+        </div>
+        </div>
+        <div id="cartoes" class="section">
+        </div>
+        <div id="enderecos" class="section">
+        </div>
+      </div>
+
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+      <script src="./assets/js/header.js"></script>
+      <script src="./assets/js/script.js"></script>
+</body>
+</html>

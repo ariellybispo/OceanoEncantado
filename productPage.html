@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todos os Produtos</title>
+    <link rel="icon" type="image/png" href="./assets/img/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./assets/css/productPage.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <img src="./assets/img/logo.png" alt="Logo" />
+        </div>
+        <div class="menu">
+          <nav>
+            <ul>
+              <li><a href="index.html">Início</a></li>
+              <li><a href="productPage.html">Produtos</a></li>
+              <li><a href="#">Contato</a></li>
+              <li><a href="#">Quem Somos</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="user-actions">
+          <a href="loginUser.html" class="login-btn">
+            <i class="fas fa-user"></i>
+            <span>faça o login ou cadastre-se</span>
+          </a>
+          <a href="#" class="favorites">
+            <i class="fas fa-heart"></i>
+          </a>
+          <a href="#" class="cart">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">1</span>
+          </a>
+        </div>
+        <div class="mobile-menu-icon" onclick="menuShow()">
+          <i class="fas fa-bars icon"></i>
+        </div>
+        <div class="mobile-menu">
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="productPage.html">Produtos</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Quem Somos</a></li>
+          </ul>
+          <div class="mobile-user-actions">
+            <a href="#" class="login-btn">
+              <i class="fas fa-user"></i>
+              <span>faça o login ou cadastre-se</span>
+            </a>
+            <a href="#" class="favorites">
+              <i class="fas fa-heart"></i>
+              <span>favoritos</span>
+            </a>
+            <a href="#" class="cart">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart-count">1</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Conteúdo Principal - Produtos -->
+    <main class="produtos-container">
+      <h1 class="produtos-titulo">Produtos</h1>
+      
+      <div class="products">
+        <!-- Produto 1 -->
+        <div class="product">
+          <span class="discount">-35%</span>
+          <div class="icons">
+            <a href="#">
+              <i class="fas fa-heart"></i>
+            </a>
+            <a href="productDetail.html">
+              <i class="fas fa-eye"></i>
+            </a>
+          </div>
+          <img
+            src="./assets/img/6bca124e-2984-4a1d-9a60-9a92749cf036.png"
+            alt="Produto"
+          />
+          <button class="button">Adicionar</button>
+          <h3>Brinquedo prático para crianças: Guindaste de madeira</h3>
+          <div class="price-container">
+            <p class="price">R$960,00</p>
+            <p class="old-price">R$1160,00</p>
+          </div>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="product">
+          <span class="discount">-25%</span>
+          <div class="icons">
+            <a href="#">
+              <i class="fas fa-heart"></i>
+            </a>
+            <a href="productDetail.html">
+              <i class="fas fa-eye"></i>
+            </a>
+          </div>
+          <img
+            src="./assets/img/83e1e786-a077-46e0-b3f2-afeaa8052e0c.png"
+            alt="Produto"
+          />
+          <button class="button">Adicionar</button>
+          <h3>Grande conjunto de presente com chocalhos e mordedores para bebês</h3>
+          <div class="price-container">
+            <p class="price">R$375,00</p>
+            <p class="old-price">R$400,00</p>
+          </div>
+        </div>
+
+        <!-- Produto 3 -->
+        <div class="product">
+          <div class="icons">
+            <a href="#">
+              <i class="fas fa-heart"></i>
+            </a>
+            <a href="productDetail.html">
+              <i class="fas fa-eye"></i>
+            </a>
+          </div>
+          <img src="./assets/img/fceb8ab1-7e1a-416a-8b77-f34987ce397d.png" alt="Produto" />
+          <button class="button">Adicionar</button>
+          <h3>Estrutura de escalada para crianças</h3>
+          <div class="price-container">
+            <p class="price blue-price">R$120,00</p>
+          </div>
+        </div>
+
+        <!-- Produto 4 -->
+        <div class="product">
+          <span class="discount">-30%</span>
+          <div class="icons">
+            <a href="#">
+              <i class="fas fa-heart"></i>
+            </a>
+            <a href="productDetail.html">
+              <i class="fas fa-eye"></i>
+            </a>
+          </div>
+          <img
+            src="./assets/img/090319b0-9695-4ca2-b7e3-21908538d7e0.png"
+            alt="Produto"
+          />
+          <button class="button">Adicionar</button>
+          <h3>Conjunto de chocalhos de madeira</h3>
+          <div class="price-container">
+            <p class="price">R$370,00</p>
+            <p class="old-price">R$400,00</p>
+          </div>
+        </div>
+
+        <!-- Produto 5 -->
+        <div class="product">
+          <span class="discount">-35%</span>
+          <div class="icons">
+            <a href="#">
+              <i class="fas fa-heart"></i>
+            </a>
+            <a href="productDetail.html">
+              <i class="fas fa-eye"></i>
+            </a>
+          </div>
+          <img
+            src="./assets/img/6bca124e-2984-4a1d-9a60-9a92749cf036.png"
+            alt="Produto"
+          />
+          <button class="button">Adicionar</button>
+          <h3>Brinquedo prático para crianças: Guindaste de madeira</h3>
+          <div class="price-container">
+            <p class="price">R$960,00</p>
+            <p class="old-price">R$1160,00</p>
+          </div>
+        </div>
+
+        <!-- Produto 6 -->
+        <div class="product">
+          <span class="discount">-25%</span>
+          <div class="icons">
+            <a href="#">
+              <i class="fas fa-heart"></i>
+            </a>
+            <a href="productDetail.html">
+              <i class="fas fa-eye"></i>
+            </a>
+          </div>
+          <img
+            src="./assets/img/83e1e786-a077-46e0-b3f2-afeaa8052e0c.png"
+            alt="Produto"
+          />
+          <button class="button">Adicionar</button>
+          <h3>Grande conjunto de presente com chocalhos e mordedores para bebês</h3>
+          <div class="price-container">
+            <p class="price">R$375,00</p>
+            <p class="old-price">R$400,00</p>
+          </div>
+        </div>
+
+        <!-- Produto 7 -->
+        <div class="product">
+          <div class="icons">
+            <a href="#">
+              <i class="fas fa-heart"></i>
+            </a>
+            <a href="productDetail.html">
+              <i class="fas fa-eye"></i>
+            </a>
+          </div>
+          <img src="./assets/img/fceb8ab1-7e1a-416a-8b77-f34987ce397d.png" alt="Produto" />
+          <button class="button">Adicionar</button>
+          <h3>Estrutura de escalada para crianças</h3>
+          <div class="price-container">
+            <p class="price blue-price">R$120,00</p>
+          </div>
+        </div>
+
+        <!-- Produto 8 -->
+        <div class="product">
+          <span class="discount">-30%</span>
+          <div class="icons">
+            <a href="#">
+              <i class="fas fa-heart"></i>
+            </a>
+            <a href="productDetail.html">
+              <i class="fas fa-eye"></i>
+            </a>
+          </div>
+          <img
+            src="./assets/img/090319b0-9695-4ca2-b7e3-21908538d7e0.png"
+            alt="Produto"
+          />
+          <button class="button">Adicionar</button>
+          <h3>Conjunto de chocalhos de madeira</h3>
+          <div class="price-container">
+            <p class="price">R$370,00</p>
+            <p class="old-price">R$400,00</p>
+          </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-image">
+          <img src="./assets/img/logo.png" alt="Logo" />
+        </div>
+        <div class="footer-section">
+          <div class="footer-top">
+            <div class="footer-top-left">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <span> Rua Nome Exemplo, 123 - Bairro </span>
+                <span>00000-000</span>
+              </div>
+            </div>
+            <div class="footer-top-right">
+              <a href="productPage.html">Produtos</a>
+              <a href="#">Quem Somos</a>
+              <a href="#">Perguntas Frequentes</a>
+              <a href="#">Entre em Contato</a>
+            </div>
+          </div>
+
+          <!-- Line -->
+          <div class="line"></div>
+
+          <div class="footer-bottom">
+            <div class="footer-bottom-left">
+              <p>
+                Copyright &copy; 2025 Oceano Encantado - Direitos Reservados
+              </p>
+            </div>
+            <div class="footer-bottom-right">
+              <a href="#">Política de Privacidade</a>
+              <a href="#">Termos de Uso</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <script src="./assets/js/header.js"></script>
+  </body>
+</html>
