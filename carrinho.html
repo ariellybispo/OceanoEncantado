@@ -1,67 +1,68 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/css/carrinho.css"> <!-- Se necessário, ajuste o caminho -->
-  <script src="assets/js/quantityProducts.js" defer></script> <!-- Vincula o arquivo JS -->
+  <link rel="stylesheet" href="assets/css/carrinho.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
   <title>Carrinho de Compras</title>
-  <link rel="icon" type="image/png" href="./assets/img/logo.png" />
 </head>
-
 <body>
-
-  <!-- Cabeçalho com título "Carrinho" -->
   <header class="header-carrinho">
     <div>
       <h1>Carrinho</h1>
     </div>
   </header>
-
-  <!-- Conteúdo do Carrinho -->
+  
   <div class="cart-container">
-    <!-- Lista de Itens do Carrinho --> 
+    <!-- Produto 1 -->
     <div class="cart-item">
-      <!-- Imagem do Produto -->
-      <img src="assets/img/barbie_o_filme_conjunto_de_brinquedo_quarto_dos_sonhos_mattel_.webp" alt="Produto 1">
-
-      <!-- Detalhes do Produto -->
+      <img src="./assets/img/6bca124e-2984-4a1d-9a60-9a92749cf036.png" alt="Produto 1">
       <div class="cart-item-details">
-        <h3>Barbie O Filme Conjunto de Brinquedo Quarto dos Sonhos</h3>
-        <p class="price">R$ 399,99</p>
+        <h3>Brinquedo prático para crianças: Guindaste de madeira</h3>
+        <p class="price">R$960,00</p>
         <div class="purchase-actions">
           <div class="quantity-selector">
-            <button class="quantity-btn minus-btn">
-              <i class="fas fa-minus"></i>
-            </button>
+            <button class="quantity-btn minus-btn"><i class="fas fa-minus"></i></button>
             <input type="text" value="1" class="quantity-input" readonly />
-            <button class="quantity-btn plus-btn">
-              <i class="fas fa-plus"></i>
-            </button>
+            <button class="quantity-btn plus-btn"><i class="fas fa-plus"></i></button>
           </div>
+          <button class="cart-item-remove" onclick="removerItem(this)">Remover</button>
         </div>
       </div>
-
-      <!-- Botão de Remover -->
-      <button class="cart-item-remove" onclick="removerItem(this)">
-        Remover
-      </button>
     </div>
 
-    <!-- Total do Carrinho -->
-    <div class="cart-total">
-      <p>Total: R$ 399,99</p>
+    <!-- Produto 2 -->
+    <div class="cart-item">
+      <img src="./assets/img/83e1e786-a077-46e0-b3f2-afeaa8052e0c.png" alt="Produto 2">
+      <div class="cart-item-details">
+        <h3>Grande conjunto de presente com chocalhos e mordedores para bebês</h3>
+        <p class="price">R$375,00</p>
+        <div class="purchase-actions">
+          <div class="quantity-selector">
+            <button class="quantity-btn minus-btn"><i class="fas fa-minus"></i></button>
+            <input type="text" value="1" class="quantity-input" readonly />
+            <button class="quantity-btn plus-btn"><i class="fas fa-plus"></i></button>
+          </div>
+          <button class="cart-item-remove" onclick="removerItem(this)">Remover</button>
+        </div>
+      </div>
     </div>
-
-    <!-- Caso o carrinho esteja vazio -->
-    <div class="empty-cart" style="display: none;">
-      <p>Seu carrinho está vazio.</p>
+  
+    <!-- Resumo do Carrinho -->
+    <div class="cart-summary">
+      <div class="select-all">
+        <input type="checkbox" id="select-all">
+        <label for="select-all">Tudo</label>
+      </div>
+      <div class="cart-total">
+        <p>Sub-total <span class="subtotal-price">R$ 1335,00 </span></p>
+        <button class="continue-btn">Continuar (<span class="cart-count">0</span>)</button>
+      </div>
     </div>
-
   </div>
 
+  <!-- Aqui vem a parte do script JavaScript -->
+  <script src="assets/js/carrinho.js"></script>
 </body>
-
 </html>

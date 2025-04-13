@@ -22,7 +22,7 @@ html {
 .header-carrinho {
   background-color: #FFBE0B;
   color: #3A86FF;
-  padding: 10px 30px;
+  padding: 10px 15px;
   text-decoration: none;
   transition: 0.3s all;
   display: flex;
@@ -31,7 +31,7 @@ html {
 }
 
 .header-carrinho h1 {
-  font-size: 4vw; /* Responsivo, ajusta conforme a largura da tela */
+  font-size: 3vw; /* Responsivo, ajusta conforme a largura da tela */
   margin: 0;
   padding-left: 0;
 }
@@ -63,7 +63,7 @@ html {
 
 .cart-item-details .price {
   font-size: 21px;
-  color: #FF6F61;
+  color: #FFAD33;
   margin-bottom: 10px;
 }
 
@@ -71,9 +71,9 @@ html {
 /* Estilo inicial do botão Remover */
 .cart-item-remove {
   background: none;
-  color: #FF6F61;
+  color: red;
   border: none;
-  font-size:30px;
+  font-size:15px;
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -81,10 +81,10 @@ html {
 }
 
 .cart-item-remove:hover {
-  background-color: #FF6F61;
+  background-color: red;
   color: white;
-  padding: 5px 10px;
-  border-radius: 5px;
+  padding: 2px 5px;
+  border-radius: 3px;
 }
 
 
@@ -120,7 +120,7 @@ html {
   text-align: center;
   font-size: 18px;
   margin-top: 40px;
-  color: #FF6F61;
+  color: red;
   background-color: #f8d7da;
   border: 1px solid #f5c6cb;
   padding: 15px;
@@ -194,7 +194,7 @@ html {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .select-all input {
@@ -205,13 +205,13 @@ html {
 .cart-total {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 20px;
 }
 
 .subtotal-price {
   color: red;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .continue-btn {
